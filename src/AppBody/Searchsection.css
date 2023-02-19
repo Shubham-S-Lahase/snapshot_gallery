@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+.searchsection{
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ width: 100%;
+ margin-top: 10px;
+ flex-direction: column;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    background-color: black;
+    justify-content: center;
+    margin-top: 30px;
+}
+.searchbar input{
+    border-right: 4px solid black;
+    font-size: 20px;
+}
+.searchbar img{
+    width: 30px;
+    background-color: white;
+}
+.categories{
+    margin-top:25px;
+}
+.categories span{
+    display: inline-block;
+    width: 100px;
+    margin: 20px;
+    background-color: rgba(68, 67, 67, 0.936);
+    color: white;
+    padding: 8px;
+    font-size: large;
+    font-family: 'Acme', sans-serif;
+    border-radius: 10px;
+}
