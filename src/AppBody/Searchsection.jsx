@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Searchsection.css";
 import { useContext } from "react";
 import { CategoryContext } from "../context";
 
 const Searchsection = () => {
   const {setCategory} = useContext(CategoryContext);
+  
 
   const getCategory = (event)=> {
     // console.log(event.target.innerHTML);
@@ -15,7 +17,7 @@ const Searchsection = () => {
       <div className="searchsection">
         <div className="searchbar">
           <input type="text" placeholder="Search.." />
-          <img src={require("./search.png")} alt="search button" />
+          <Link><img src={require("./search.png")} alt="search button"/></Link>
         </div>
         <div className="categories">
           <span onClick={getCategory}>Home</span>

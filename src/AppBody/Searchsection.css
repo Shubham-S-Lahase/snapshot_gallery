@@ -36,4 +36,5 @@
     font-size: large;
     font-family: 'Acme', sans-serif;
     border-radius: 10px;
+    cursor: pointer;
 }

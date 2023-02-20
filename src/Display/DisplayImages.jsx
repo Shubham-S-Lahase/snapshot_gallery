@@ -2,6 +2,10 @@ import "./DisplayImages.css";
 import { useContext } from "react";
 import { CategoryContext } from "../context";
 import Home from "../types/Home";
+import Mountain from "../types/Mountain";
+import Beaches from "../types/Beaches";
+import Birds from "../types/Birds";
+import Food from "../types/Food";
 
 const DisplayImages = () => {
   const { category } = useContext(CategoryContext);
@@ -15,19 +19,19 @@ const DisplayImages = () => {
             </>
         ) || category == "Mountain" && (
             <>
-                <p>Mountain</p>
+                <Mountain api="https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721497868204&format=json&nojsoncallback=1"/>
             </>
         ) || category == "Beaches" && (
             <>
-                <p>Beaches</p>
+                <Beaches api="https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721498680473&format=json&nojsoncallback=1"/>
             </>
         ) || category == "Birds" && (
             <>
-                <p>Birds</p>
+                <Birds api="https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721498719578&format=json&nojsoncallback=1" />
             </>
         ) || category == "Food" && (
             <>
-                <p>Food</p>
+                <Food api=" https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721511530237&format=json&nojsoncallback=1" />
             </>
         )}
     </div>
