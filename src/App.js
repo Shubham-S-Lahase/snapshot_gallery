@@ -1,22 +1,25 @@
-import React from 'react';
-import './App.css';
-import { Router,Routes, Route } from 'react-router-dom';
-import AppHeader from './Header/AppHeader';
-import Searchsection from './AppBody/Searchsection';
-import DisplayImages from './Display/DisplayImages';
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AppHeader from "./Header/AppHeader";
+import Searchsection from "./AppBody/Searchsection";
+import DisplayImages from "./Display/DisplayImages";
+import CategoryContextProvider from "./context";
 function App() {
   return (
     <div className="App">
       <>
+        <BrowserRouter>
+        <CategoryContextProvider>
         <AppHeader/>
         <Searchsection/>
-        <DisplayImages/>
-       {/* <Router>
-       <Routes>
-            <Route path='/' element={<DisplayImages/>} />
-        </Routes>
-       </Router> */}
+        <DisplayImages>
+          <Routes>
+            <Route index path="/"/>
+          </Routes>
+        </DisplayImages>
+        </CategoryContextProvider>
+        </BrowserRouter>
       </>
     </div>
   );
