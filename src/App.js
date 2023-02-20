@@ -13,11 +13,7 @@ function App() {
         <CategoryContextProvider>
         <AppHeader/>
         <Searchsection/>
-        <DisplayImages>
-          <Routes>
-            <Route index path="/"/>
-          </Routes>
-        </DisplayImages>
+        <DisplayImages/>
         </CategoryContextProvider>
         </BrowserRouter>
       </>

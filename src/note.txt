@@ -1,0 +1,9 @@
+
+//api key = 686e8872e630c25f29294e8ba3545d57
+//random gallery id - 72157721498159408    https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721498159408&format=json&nojsoncallback=1
+//mountain galllery id - 72157721497868204   https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721497868204&format=json&nojsoncallback=1
+//beach gall id - 72157721498680473          https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721498680473&format=json&nojsoncallback=1
+//birds gall id - 72157721498719578            https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721498719578&format=json&nojsoncallback=1
+//foof id - 72157721511530237                   https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721511530237&format=json&nojsoncallback=1
+
+search = https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=686e8872e630c25f29294e8ba3545d57&text=bear&format=rest

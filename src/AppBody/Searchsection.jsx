@@ -6,18 +6,21 @@ import { CategoryContext } from "../context";
 
 const Searchsection = () => {
   const {setCategory} = useContext(CategoryContext);
-  
 
   const getCategory = (event)=> {
     // console.log(event.target.innerHTML);
     setCategory(event.target.innerHTML);
   }
+  const getValue = () => {
+    setCategory(document.getElementById("searchinput").value)
+    document.getElementById("searchinput").value ="";
+  }
   return (
     <>
       <div className="searchsection">
         <div className="searchbar">
-          <input type="text" placeholder="Search.." />
-          <Link><img src={require("./search.png")} alt="search button"/></Link>
+          <input type="text" id="searchinput" placeholder="Search.."/>
+          <Link to={`/search`}><img src={require("./search.png")} alt="search button" onClick={getValue} /></Link>
         </div>
         <div className="categories">
           <span onClick={getCategory}>Home</span>

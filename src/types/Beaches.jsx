@@ -13,7 +13,7 @@ const Beaches = ({ api }) => {
     getImages();
   }, []);
 
-  console.log(photos);
+  // console.log(photos);
 
   return(
   <>
@@ -25,7 +25,7 @@ const Beaches = ({ api }) => {
                 photos.map((photo, i) => {
                     let imgurl = `http://farm${photo.farm}.static.flickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`;
                     return <div>
-                        <img key={i} src={imgurl} alt="image" />
+                        <img key={i} src={imgurl} alt="Beach Image" />
                     </div>
                 })
             }

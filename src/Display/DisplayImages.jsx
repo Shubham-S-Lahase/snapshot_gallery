@@ -6,10 +6,12 @@ import Mountain from "../types/Mountain";
 import Beaches from "../types/Beaches";
 import Birds from "../types/Birds";
 import Food from "../types/Food";
+import SearchImages from "../SearchImages";
 
 const DisplayImages = () => {
   const { category } = useContext(CategoryContext);
   console.log(category);
+  const cats = ["Home", "Mountain", "Beaches", "Birds", "Food"];
 
   return (
     <div className="imagescontainer">
@@ -32,6 +34,10 @@ const DisplayImages = () => {
         ) || category == "Food" && (
             <>
                 <Food api=" https://www.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=686e8872e630c25f29294e8ba3545d57&gallery_id=72157721511530237&format=json&nojsoncallback=1" />
+            </>
+        ) || !cats.includes(category) && (
+            <>
+                <SearchImages api={`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=686e8872e630c25f29294e8ba3545d57&text=${category}&format=json&nojsoncallback=1`} />
             </>
         )}
     </div>
