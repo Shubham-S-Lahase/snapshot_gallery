@@ -1,0 +1,7 @@
+.imagescontainer{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
