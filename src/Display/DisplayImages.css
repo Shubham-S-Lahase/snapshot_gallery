@@ -16,4 +16,8 @@
 .imagescontainer #img div img{
     width: 100%;
     height: 100%;
+    transition: 2s ease-in-out;
+}
+.imagescontainer #img div img:hover{
+    transform: scale(1.5,1.5)
 }

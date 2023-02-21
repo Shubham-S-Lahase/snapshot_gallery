@@ -10,7 +10,7 @@ import SearchImages from "../SearchImages";
 
 const DisplayImages = () => {
   const { category } = useContext(CategoryContext);
-  console.log(category);
+//   console.log(category);
   const cats = ["Home", "Mountain", "Beaches", "Birds", "Food"];
 
   return (
